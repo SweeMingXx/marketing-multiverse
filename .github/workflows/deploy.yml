@@ -1,0 +1,40 @@
+name: Deploy original Marketing Multiverse HTML
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: marketing-multiverse-pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Reconstruct original uploaded HTML
+        run: |
+          node -e 'const fs=require("fs"),z=require("zlib");const b=[1,2,3,4].map(i=>fs.readFileSync(`payload/0${i}.txt`,"utf8")).join("");fs.writeFileSync("index.html",z.brotliDecompressSync(Buffer.from(b,"base64")))'
+          echo '91d7bc442e3f2d6396e87d135fa2f1f47f404e48f220286930e6e7fff28415a8  index.html' | sha256sum -c -
+      - name: Commit exact HTML to main
+        run: |
+          if ! git diff --quiet -- index.html; then
+            git config user.name github-actions[bot]
+            git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+            git add index.html
+            git commit -m 'Publish exact user-provided Marketing Multiverse HTML'
+            git push
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
