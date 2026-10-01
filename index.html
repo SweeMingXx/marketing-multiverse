@@ -1,1 +1,1519 @@
-<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Marketing Multiverse</title><meta http-equiv="refresh" content="0;url=https://sweemingxx.github.io/marketing-multiverse/"><link rel="canonical" href="https://sweemingxx.github.io/marketing-multiverse/"><p>Opening <a href="https://sweemingxx.github.io/marketing-multiverse/">Marketing Multiverse</a>…</p>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marketing Multiverse: End-to-End Master Marketing Framework</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Bebas+Neue&family=Comic+Neue:ital,wght@0,400;0,700;1,700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Lucide Icons & Confetti -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            comicYellow: '#FFE817',
+            comicRed: '#FF2A54',
+            comicBlue: '#00D2FF',
+            comicPurple: '#9D00FF',
+            comicGreen: '#10DF79',
+            comicInk: '#090A0F',
+            comicPaper: '#FFFDF0',
+            comicMuted: '#1E2235'
+          },
+          fontFamily: {
+            bangers: ['Bangers', 'cursive'],
+            bebas: ['Bebas Neue', 'sans-serif'],
+            comic: ['Comic Neue', 'cursive'],
+            sans: ['Space Grotesk', 'sans-serif'],
+          },
+          boxShadow: {
+            'comic': '5px 5px 0px #090A0F',
+            'comic-lg': '8px 8px 0px #090A0F',
+            'comic-xl': '12px 12px 0px #090A0F',
+            'comic-hover': '10px 10px 0px #090A0F',
+            'comic-active': '2px 2px 0px #090A0F',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Halftone & Comic Textures */
+    .halftone-bg {
+      background-image: radial-gradient(#090A0F 18%, transparent 19%);
+      background-size: 14px 14px;
+    }
+    .halftone-dense {
+      background-image: radial-gradient(rgba(9, 10, 15, 0.25) 20%, transparent 21%);
+      background-size: 8px 8px;
+    }
+    .halftone-yellow {
+      background-image: radial-gradient(#FFE817 25%, transparent 26%);
+      background-size: 12px 12px;
+    }
+    .halftone-red {
+      background-image: radial-gradient(rgba(255, 42, 84, 0.2) 20%, transparent 21%);
+      background-size: 10px 10px;
+    }
+    
+    /* Comic Border Standard */
+    .comic-border {
+      border: 3.5px solid #090A0F;
+    }
+    .comic-border-thick {
+      border: 5px solid #090A0F;
+    }
+
+    /* Speech Bubble Triangle */
+    .speech-bubble-bottom::after {
+      content: '';
+      position: absolute;
+      bottom: -16px;
+      left: 32px;
+      border-width: 16px 16px 0 0;
+      border-style: solid;
+      border-color: #FFFDF0 transparent transparent transparent;
+      display: block;
+      width: 0;
+      filter: drop-shadow(3px 3px 0px #090A0F);
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 12px;
+      height: 12px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FFE817;
+      border-left: 3px solid #090A0F;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #FF2A54;
+      border: 2px solid #090A0F;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #090A0F;
+    }
+
+    /* Comic Action Text Stroke */
+    .stroke-ink {
+      -webkit-text-stroke: 2px #090A0F;
+    }
+    .stroke-ink-lg {
+      -webkit-text-stroke: 3px #090A0F;
+    }
+    
+    /* Animation Shakes */
+    @keyframes comic-float {
+      0%, 100% { transform: translateY(0) rotate(-0.5deg); }
+      50% { transform: translateY(-8px) rotate(0.5deg); }
+    }
+    .animate-comic-float {
+      animation: comic-float 4s ease-in-out infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-comicPaper text-comicInk font-sans selection:bg-comicYellow selection:text-comicInk min-h-screen overflow-x-hidden">
+
+  <!-- TOP MARQUEE / TICKER -->
+  <div class="bg-comicYellow border-b-4 border-comicInk py-1.5 px-4 overflow-hidden relative z-50">
+    <div class="flex items-center space-x-6 text-xs md:text-sm font-bangers tracking-wider uppercase whitespace-nowrap animate-pulse">
+      <span class="flex items-center gap-1.5"><i data-lucide="zap" class="w-4 h-4 fill-comicRed text-comicInk"></i> BA8133 × BA8134 × KOTLER 7.0 × ALEX HORMOZI</span>
+      <span>★</span>
+      <span class="bg-comicRed text-white px-2 py-0.5 rounded-sm border-2 border-comicInk">NO FLUFF. NO BLIND SPENDS. 100% DIAGNOSTIC CLARITY!</span>
+      <span>★</span>
+      <span>ISSUE #01: THE DEFINITIVE STRATEGIC MARKETING COMPENDIUM</span>
+      <span>★</span>
+      <span>APPROVED BY THE COGNITIVE MARKETING CODE AUTHORITY</span>
+    </div>
+  </div>
+
+  <!-- STICKY RETRO NAVBAR -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b-4 border-comicInk">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-3">
+      <!-- Title Badge -->
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-10 h-10 bg-comicRed border-3 comic-border flex items-center justify-center shadow-comic group-hover:rotate-6 transition-transform">
+          <i data-lucide="crosshair" class="w-6 h-6 text-white stroke-[3]"></i>
+        </div>
+        <div>
+          <span class="font-bangers text-2xl tracking-wide text-comicInk group-hover:text-comicRed transition-colors">MARKETING MULTIVERSE</span>
+          <span class="block text-[10px] font-bold tracking-widest text-gray-600 uppercase -mt-1.5">End-to-End Master Engine</span>
+        </div>
+      </a>
+
+      <!-- Quick Jump Nav -->
+      <nav class="hidden md:flex items-center gap-2 font-bangers tracking-wider text-base">
+        <a href="#saga-overview" class="px-3 py-1 bg-white hover:bg-comicYellow comic-border shadow-comic transition-all active:translate-y-0.5">Saga Map</a>
+        <a href="#phase-1" class="px-3 py-1 bg-comicBlue/20 hover:bg-comicBlue comic-border shadow-comic transition-all active:translate-y-0.5">Phase 1: Diagnostic</a>
+        <a href="#phase-2" class="px-3 py-1 bg-comicYellow/30 hover:bg-comicYellow comic-border shadow-comic transition-all active:translate-y-0.5">Phase 2: Strategy</a>
+        <a href="#phase-3" class="px-3 py-1 bg-comicRed/20 hover:bg-comicRed hover:text-white comic-border shadow-comic transition-all active:translate-y-0.5">Phase 3: Endgame</a>
+        <a href="#interactive-lab" class="px-3 py-1 bg-comicGreen/30 hover:bg-comicGreen comic-border shadow-comic transition-all active:translate-y-0.5">Problem Forge</a>
+      </nav>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-2">
+        <button onclick="launchConfetti()" class="px-4 py-1.5 bg-comicYellow hover:bg-yellow-300 comic-border shadow-comic font-bangers tracking-wider text-sm flex items-center gap-1.5 transform active:translate-y-1">
+          <i data-lucide="sparkles" class="w-4 h-4 fill-comicInk"></i> POW! TRIGGER
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION: THE MASTER COVER -->
+  <section class="relative pt-12 pb-16 px-4 sm:px-6 overflow-hidden border-b-4 border-comicInk bg-gradient-to-b from-yellow-50 via-white to-amber-100/50">
+    <div class="absolute inset-0 halftone-dense opacity-20 pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        
+        <!-- Left Hero Copy -->
+        <div class="lg:col-span-8 space-y-5">
+          <!-- Issue Stamp -->
+          <div class="inline-flex items-center gap-2 bg-comicInk text-white px-3 py-1 comic-border shadow-comic text-xs font-bold uppercase tracking-widest transform -rotate-1">
+            <span class="w-2.5 h-2.5 rounded-full bg-comicRed animate-ping"></span>
+            Special Collector's Edition: The Complete Strategic Framework
+          </div>
+
+          <h1 class="font-bangers text-5xl sm:text-7xl lg:text-8xl tracking-tight leading-[0.92] text-comicInk">
+            STOP BURNING BUDGET! <br>
+            <span class="text-comicRed inline-block transform -rotate-1 drop-shadow-[4px_4px_0px_#090A0F]">DIAGNOSE</span> FIRST, 
+            <span class="text-comicBlue inline-block transform rotate-1 drop-shadow-[4px_4px_0px_#090A0F]">DOMINATE</span> NEXT.
+          </h1>
+
+          <p class="text-base sm:text-lg font-medium text-gray-800 max-w-2xl leading-relaxed comic-border bg-white p-4 shadow-comic">
+            Welcome to the definitive three-phase architecture: bridge <strong class="text-comicRed">BA8133 Consumer Diagnostics</strong> into <strong class="text-comicBlue">BA8134 Digital Strategy & Media Execution</strong>, and finish with <strong class="text-comicPurple">Kotler 7.0 & Alex Hormozi's Grand Slam Offer Endgame</strong>. Every single step, matrix, and formula preserved without dilution.
+          </p>
+
+          <!-- Badges Grid -->
+          <div class="flex flex-wrap gap-3 pt-2">
+            <span class="px-3 py-1 bg-comicYellow comic-border shadow-comic font-bangers text-sm">⚔️ Anti-Premature Solution</span>
+            <span class="px-3 py-1 bg-comicBlue/30 comic-border shadow-comic font-bangers text-sm">🎯 6-Column Media Precision</span>
+            <span class="px-3 py-1 bg-comicRed/20 comic-border shadow-comic font-bangers text-sm">🧠 3 Cognitive Brain Systems</span>
+            <span class="px-3 py-1 bg-comicGreen/30 comic-border shadow-comic font-bangers text-sm">🛡️ Minimum Viable Evidence</span>
+          </div>
+        </div>
+
+        <!-- Right Hero Comic Card -->
+        <div class="lg:col-span-4 flex justify-center">
+          <div class="relative w-full max-w-sm bg-white comic-border-thick shadow-comic-xl p-5 transform rotate-2 hover:rotate-0 transition-transform duration-300">
+            <!-- Comic Seal -->
+            <div class="absolute -top-6 -right-6 w-20 h-20 bg-comicYellow rounded-full comic-border flex flex-col items-center justify-center font-bangers shadow-comic transform rotate-12">
+              <span class="text-[10px] leading-tight text-comicInk text-center font-sans font-black">MARKETING</span>
+              <span class="text-xl text-comicRed -my-1">100%</span>
+              <span class="text-[9px] uppercase font-bold text-comicInk">PROVEN</span>
+            </div>
+
+            <!-- Card Header -->
+            <div class="border-b-3 border-comicInk pb-3 mb-4 bg-comicBlue/15 -mx-5 -mt-5 p-4 border-b-4">
+              <span class="text-xs font-black uppercase tracking-wider text-comicRed block font-comic">THE STRATEGIC SPINE</span>
+              <h3 class="font-bangers text-3xl tracking-wide text-comicInk">3 SAGA PHASES</h3>
+            </div>
+
+            <!-- Mini Saga List -->
+            <div class="space-y-3 font-comic text-sm">
+              <div class="p-2.5 bg-yellow-50 comic-border flex items-start gap-3">
+                <span class="w-6 h-6 rounded bg-comicYellow comic-border flex items-center justify-center font-bangers text-sm shrink-0">1</span>
+                <div>
+                  <strong class="block font-bold text-comicInk font-sans text-xs uppercase">BA8133 Consumer Diagnosis</strong>
+                  <span class="text-xs text-gray-700">Root-cause discovery, CCEG canvas, 4 segmentation bases, journey friction.</span>
+                </div>
+              </div>
+
+              <div class="p-2.5 bg-blue-50 comic-border flex items-start gap-3">
+                <span class="w-6 h-6 rounded bg-comicBlue comic-border flex items-center justify-center font-bangers text-sm shrink-0 text-white">2</span>
+                <div>
+                  <strong class="block font-bold text-comicInk font-sans text-xs uppercase">BA8134 Digital Strategy & Media</strong>
+                  <span class="text-xs text-gray-700">SOSTAC® × RACE, 6-column media plan, funnel dashboard, A/B testing.</span>
+                </div>
+              </div>
+
+              <div class="p-2.5 bg-purple-50 comic-border flex items-start gap-3">
+                <span class="w-6 h-6 rounded bg-comicPurple text-white comic-border flex items-center justify-center font-bangers text-sm shrink-0">3</span>
+                <div>
+                  <strong class="block font-bold text-comicInk font-sans text-xs uppercase">Hormozi & Kotler 7.0 Endgame</strong>
+                  <span class="text-xs text-gray-700">Category of One Grand Slam offer, Attention/Social/Reward brain stacks.</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t-2 border-dashed border-comicInk text-center">
+              <span class="text-xs font-bold text-gray-600 uppercase font-sans">Scroll to uncover the master scrolls ↓</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MASTER WORKFLOW SAGA MAP -->
+  <section id="saga-overview" class="py-12 px-4 sm:px-6 bg-white border-b-4 border-comicInk relative">
+    <div class="max-w-7xl mx-auto">
+      
+      <!-- Section Header -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <div class="inline-block bg-comicYellow comic-border px-3 py-0.5 text-xs font-bold tracking-widest uppercase shadow-comic mb-2">
+            ARCHITECTURAL SCHEMATIC
+          </div>
+          <h2 class="font-bangers text-4xl sm:text-5xl text-comicInk tracking-wide">
+            THE MASTER END-TO-END WORKFLOW PIPELINE
+          </h2>
+        </div>
+        <div class="text-sm font-comic text-gray-600 bg-gray-100 p-2.5 comic-border max-w-sm">
+          "Each phase hands over rigorous, evidence-backed artifacts to the next. No guesswork allowed."
+        </div>
+      </div>
+
+      <!-- Master Architecture Graphic Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 relative">
+        
+        <!-- PHASE 1 SCHEMATIC -->
+        <div class="bg-yellow-50 comic-border-thick p-5 shadow-comic-lg relative">
+          <div class="absolute -top-4 left-4 bg-comicYellow text-comicInk font-bangers text-lg px-3 py-0.5 comic-border shadow-comic">
+            PHASE 1: DIAGNOSTIC SAGA
+          </div>
+          <p class="text-xs font-bold text-gray-600 uppercase tracking-wider mt-2 mb-4 font-sans">
+            BA8133 · "Diagnose Root Causes Before Spending Budget"
+          </p>
+
+          <div class="space-y-2 text-xs font-semibold">
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Step 1: CCEG Canvas</span>
+              <span class="text-gray-600 text-[10px]">Context, Concern, Evidence, Gap</span>
+            </div>
+            <div class="text-center font-bangers text-comicRed text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Step 2: 5 Decision Stages</span>
+              <span class="text-gray-600 text-[10px]">Non-linear journey & 4 prompts</span>
+            </div>
+            <div class="text-center font-bangers text-comicRed text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Step 3: Evidence Screening</span>
+              <span class="text-gray-600 text-[10px]">Consumer Evidence Summary (CES)</span>
+            </div>
+            <div class="text-center font-bangers text-comicRed text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Step 4: Segmentation (4 Bases)</span>
+              <span class="text-gray-600 text-[10px]">Escape the demographic trap</span>
+            </div>
+            <div class="text-center font-bangers text-comicRed text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Step 5: Persona Handover</span>
+              <span class="text-gray-600 text-[10px]">3 Selection checks & 6 fields</span>
+            </div>
+            <div class="text-center font-bangers text-comicRed text-base py-0.5">▼</div>
+            <div class="bg-comicYellow p-2.5 comic-border flex items-center justify-between font-bold">
+              <span>Step 6: Problem Statement</span>
+              <span class="text-comicInk text-[10px]">Journey map + PESTLE formula</span>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t-2 border-comicInk text-center font-bangers text-comicRed text-sm tracking-wide">
+            OUTPUT: DIAGNOSTIC ARTIFACT READY FOR HANDOVER ──►
+          </div>
+        </div>
+
+        <!-- PHASE 2 SCHEMATIC -->
+        <div class="bg-blue-50 comic-border-thick p-5 shadow-comic-lg relative">
+          <div class="absolute -top-4 left-4 bg-comicBlue text-white font-bangers text-lg px-3 py-0.5 comic-border shadow-comic">
+            PHASE 2: DIGITAL STRATEGY SAGA
+          </div>
+          <p class="text-xs font-bold text-gray-600 uppercase tracking-wider mt-2 mb-4 font-sans">
+            BA8134 · "Strategy, Channel Planning & Execution"
+          </p>
+
+          <div class="space-y-2 text-xs font-semibold">
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Unit 1: SMART & OKRs</span>
+              <span class="text-gray-600 text-[10px]">Qualitative Obj + Primary & Diagnostic KRs</span>
+            </div>
+            <div class="text-center font-bangers text-comicBlue text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Unit 2: SOSTAC® × RACE</span>
+              <span class="text-gray-600 text-[10px]">Macro spine meets digital funnel</span>
+            </div>
+            <div class="text-center font-bangers text-comicBlue text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Unit 3: GTM Personas & Ads</span>
+              <span class="text-gray-600 text-[10px]">Algorithmic Advantage+ / CAPI signals</span>
+            </div>
+            <div class="text-center font-bangers text-comicBlue text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Unit 4: Funnel & KPI Board</span>
+              <span class="text-gray-600 text-[10px]">Eliminate vanity; enforce meaningful KPIs</span>
+            </div>
+            <div class="text-center font-bangers text-comicBlue text-base py-0.5">▼</div>
+            <div class="bg-white p-2.5 comic-border flex items-center justify-between">
+              <span>Unit 5: PESO 6-Col Media Plan</span>
+              <span class="text-gray-600 text-[10px]">Platform, Stage, Targeting, Format, $, KPI</span>
+            </div>
+            <div class="text-center font-bangers text-comicBlue text-base py-0.5">▼</div>
+            <div class="bg-comicBlue text-white p-2.5 comic-border flex items-center justify-between font-bold">
+              <span>Unit 6: A/B Testing Blueprint</span>
+              <span class="text-white text-[10px]">Scientific hypotheses & strategy consolidation</span>
+            </div>
+          </div>
+
+          <div class="mt-4 pt-3 border-t-2 border-comicInk text-center font-bangers text-comicBlue text-sm tracking-wide">
+            OUTPUT: WORKPLAN ARTIFACT READY FOR COGNITIVE DESIGN ──►
+          </div>
+        </div>
+
+        <!-- PHASE 3 SCHEMATIC -->
+        <div class="bg-purple-50 comic-border-thick p-5 shadow-comic-lg relative">
+          <div class="absolute -top-4 left-4 bg-comicPurple text-white font-bangers text-lg px-3 py-0.5 comic-border shadow-comic">
+            PHASE 3: STRATEGIC OFFER & COGNITION
+          </div>
+          <p class="text-xs font-bold text-gray-600 uppercase tracking-wider mt-2 mb-4 font-sans">
+            Kotler 7.0 & Alex Hormozi · "Positioning & Offer Stack"
+          </p>
+
+          <div class="space-y-4 text-xs font-semibold">
+            <div class="bg-white p-4 comic-border space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-comicYellow comic-border text-[10px] font-bangers">HORMOZI</span>
+                <strong class="font-sans text-comicInk text-sm">Category of One (Grand Slam Offer)</strong>
+              </div>
+              <ul class="text-gray-700 space-y-1 list-disc list-inside text-[11px]">
+                <li><strong>Selling in a Vacuum:</strong> Destroy commodity comparisons.</li>
+                <li><strong>New Opportunity:</strong> Never sell a 10% "improvement offer."</li>
+                <li><strong>Friction-to-Value Stacking:</strong> Flip Step 6 friction points into guarantees & bonuses.</li>
+              </ul>
+            </div>
+
+            <div class="text-center font-bangers text-comicPurple text-base py-0.5">▼</div>
+
+            <div class="bg-white p-4 comic-border space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="px-2 py-0.5 bg-comicRed text-white comic-border text-[10px] font-bangers">KOTLER 7.0</span>
+                <strong class="font-sans text-comicInk text-sm">Cognitive Compass (Augmented Human)</strong>
+              </div>
+              <ul class="text-gray-700 space-y-1 list-disc list-inside text-[11px]">
+                <li><strong>Attention Brain:</strong> Pattern interrupts, raw lo-fi content.</li>
+                <li><strong>Social Brain:</strong> Micro-communities & StoryBrand SB7 (Hero/Guide).</li>
+                <li><strong>Reward Brain:</strong> Cognitive trade-offs & WOW checkout moments.</li>
+              </ul>
+            </div>
+
+            <div class="bg-comicPurple text-white p-3 comic-border text-center font-bangers text-base tracking-wide shadow-comic">
+              FINAL OUTCOME: IRRESISTIBLE HIGH-CONVERSION ENGINE!
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PHASE 1: CONSUMER DIAGNOSTIC PROCESS (BA8133) -->
+  <!-- ========================================================================= -->
+  <section id="phase-1" class="py-16 px-4 sm:px-6 bg-amber-50/60 border-b-4 border-comicInk relative">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- Phase Banner -->
+      <div class="bg-comicYellow comic-border-thick p-6 sm:p-8 shadow-comic-xl relative overflow-hidden">
+        <div class="absolute right-0 top-0 translate-x-12 -translate-y-6 opacity-15 font-bangers text-9xl select-none">
+          PHASE 01
+        </div>
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-comicInk text-white px-3 py-1 comic-border text-xs font-bangers tracking-wider uppercase mb-2">
+              <i data-lucide="shield-alert" class="w-4 h-4 text-comicYellow"></i> BA8133 FOUNDATION COMPONENT
+            </div>
+            <h2 class="font-bangers text-4xl sm:text-6xl text-comicInk tracking-wide">
+              PHASE 1: CONSUMER DIAGNOSTIC PROCESS
+            </h2>
+            <p class="font-comic text-base sm:text-lg text-gray-800 font-bold max-w-3xl mt-1">
+              "Diagnose Before Prescribing." Never jump to channel tactics or creative solutions until you have established an evidence-backed explanation of consumer friction.
+            </p>
+          </div>
+          <div class="bg-white p-3.5 comic-border shadow-comic text-center min-w-[200px]">
+            <span class="block text-xs font-black uppercase text-comicRed font-sans">CRITICAL RULE</span>
+            <span class="font-bangers text-2xl text-comicInk">NO PREMATURE SOLUTIONS</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 1: CCEG CANVAS -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicYellow comic-border flex items-center justify-center font-bangers text-xl">1</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                CONCEPT 1: CLARIFY THE SITUATION — THE CCEG CANVAS
+              </h3>
+              <span class="text-xs font-bold text-comicRed uppercase font-sans">Objective Baseline vs. The Premature Solution Fallacy</span>
+            </div>
+          </div>
+          <div class="bg-red-100 text-comicRed px-3 py-1 comic-border text-xs font-black uppercase tracking-wider font-sans">
+            FALLACY INTERCEPTOR
+          </div>
+        </div>
+
+        <!-- Why it exists speech bubble -->
+        <div class="bg-yellow-50 p-4 comic-border mb-6 relative">
+          <p class="text-sm font-medium text-gray-800">
+            <strong>Why It Exists:</strong> Marketers frequently commit the <em>Premature Solution Fallacy</em>—jumping straight to tactics like "we need social media ads," "we need a website redesign," or "we need a chatbot" without investigating why consumers fail to convert. The CCEG Canvas establishes an objective, factual baseline for the investigation.
+          </p>
+        </div>
+
+        <!-- CCEG 4-Quadrant Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <!-- Context -->
+          <div class="bg-white p-5 comic-border shadow-comic relative hover:-translate-y-1 transition-transform">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bangers text-2xl text-comicBlue">C - CONTEXT</span>
+              <span class="text-[10px] font-bold bg-blue-100 text-blue-900 px-2 py-0.5 comic-border">WHAT IS IT?</span>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Describes the organization, its core offering, target consumer group, consumer need addressed, and the specific desired consumer action (e.g., submitting an enquiry or upgrading a subscription). Context describes the situation <strong>without evaluating performance or explaining the concern</strong>.
+            </p>
+          </div>
+
+          <!-- Concern -->
+          <div class="bg-white p-5 comic-border shadow-comic relative hover:-translate-y-1 transition-transform">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bangers text-2xl text-comicRed">C - CONCERN</span>
+              <span class="text-[10px] font-bold bg-red-100 text-red-900 px-2 py-0.5 comic-border">WHAT IS HAPPENING?</span>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Identifies <strong>one observable, undesirable consumer behavior or business outcome</strong> (e.g., website traffic increased by 140%, but subscription upgrades dropped). It strictly answers <em>what is happening</em>, not <em>why</em>.
+            </p>
+          </div>
+
+          <!-- Evidence -->
+          <div class="bg-white p-5 comic-border shadow-comic relative hover:-translate-y-1 transition-transform">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bangers text-2xl text-comicGreen">E - EVIDENCE</span>
+              <span class="text-[10px] font-bold bg-green-100 text-green-900 px-2 py-0.5 comic-border">WHAT PROVES IT?</span>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Documents existing factual data (traffic logs, support emails, enquiry counts, CRM records) that <strong>confirm the concern is real</strong>. Eliminates hearsay and subjective executive feelings.
+            </p>
+          </div>
+
+          <!-- Gap -->
+          <div class="bg-white p-5 comic-border shadow-comic relative hover:-translate-y-1 transition-transform">
+            <div class="flex items-center justify-between mb-2">
+              <span class="font-bangers text-2xl text-comicPurple">G - GAP</span>
+              <span class="text-[10px] font-bold bg-purple-100 text-purple-900 px-2 py-0.5 comic-border">WHAT IS UNKNOWN?</span>
+            </div>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Highlights <strong>critical unanswered questions that current data cannot explain</strong> (e.g., why do prospects exit after viewing the rules page? Why do users abandon checkout at the ID verification step?).
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 2: THE 5-STAGE DECISION PROCESS -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicYellow comic-border flex items-center justify-center font-bangers text-xl">2</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                CONCEPT 2: UNDERSTAND THE CONSUMER — THE 5-STAGE DECISION PROCESS
+              </h3>
+              <span class="text-xs font-bold text-comicBlue uppercase font-sans">Mapping Mental & Behavioral Momentum</span>
+            </div>
+          </div>
+          <div class="bg-yellow-200 px-3 py-1 comic-border text-xs font-bold font-sans">
+            NON-LINEAR REALITY
+          </div>
+        </div>
+
+        <div class="bg-yellow-50 p-4 comic-border mb-6">
+          <p class="text-sm font-medium text-gray-800">
+            <strong>Why It Exists:</strong> Consumers do not make choices instantaneously. To understand why they stall or drop off, marketers map their mental and behavioral journey across five non-linear stages.
+          </p>
+          <div class="mt-3 p-3 bg-comicRed/10 border-l-4 border-comicRed text-xs sm:text-sm font-bold text-comicRed">
+            ⚡ CRUCIAL RULE ON NON-LINEARITY: An incomplete form, cart abandonment, or site exit is NOT an automatic rejection! The consumer may simply need more time, want to consult a peer, wait for funding, or compare alternative providers.
+          </div>
+        </div>
+
+        <!-- The 5 Stages Comic Strips -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5 mb-8">
+          
+          <div class="bg-white p-3.5 comic-border shadow-comic flex flex-col justify-between">
+            <div>
+              <span class="bg-comicInk text-white font-bangers text-xs px-2 py-0.5 comic-border inline-block mb-2">STAGE 1</span>
+              <h4 class="font-bangers text-lg text-comicInk">NEED RECOGNITION</h4>
+              <p class="text-xs text-gray-700 mt-2">
+                Driven by internal stimuli (e.g., career goals, hunger) or external triggers (workplace changes, broken tools). Ad clicks here show <em>initial curiosity</em>, not purchase readiness!
+              </p>
+            </div>
+            <div class="mt-3 text-[10px] font-bold text-gray-600 bg-gray-100 p-1.5 comic-border">
+              Trigger prompts need
+            </div>
+          </div>
+
+          <div class="bg-white p-3.5 comic-border shadow-comic flex flex-col justify-between">
+            <div>
+              <span class="bg-comicInk text-white font-bangers text-xs px-2 py-0.5 comic-border inline-block mb-2">STAGE 2</span>
+              <h4 class="font-bangers text-lg text-comicInk">INFORMATION SEARCH</h4>
+              <p class="text-xs text-gray-700 mt-2">
+                The consumer seeks answers across digital and physical channels (search engines, course portals, peer discussions, reviews).
+              </p>
+            </div>
+            <div class="mt-3 text-[10px] font-bold text-gray-600 bg-gray-100 p-1.5 comic-border">
+              Channels searched for answers
+            </div>
+          </div>
+
+          <div class="bg-white p-3.5 comic-border shadow-comic flex flex-col justify-between">
+            <div>
+              <span class="bg-comicInk text-white font-bangers text-xs px-2 py-0.5 comic-border inline-block mb-2">STAGE 3</span>
+              <h4 class="font-bangers text-lg text-comicInk">EVALUATION OF ALTERNATIVES</h4>
+              <p class="text-xs text-gray-700 mt-2">
+                Weighing competing options using specific criteria (price, convenience, relevance, schedule fit) while seeking to <strong>minimize personal and financial risk</strong>.
+              </p>
+            </div>
+            <div class="mt-3 text-[10px] font-bold text-gray-600 bg-gray-100 p-1.5 comic-border">
+              Criteria used to compare
+            </div>
+          </div>
+
+          <div class="bg-white p-3.5 comic-border shadow-comic flex flex-col justify-between">
+            <div>
+              <span class="bg-comicInk text-white font-bangers text-xs px-2 py-0.5 comic-border inline-block mb-2">STAGE 4</span>
+              <h4 class="font-bangers text-lg text-comicInk">DECISION</h4>
+              <p class="text-xs text-gray-700 mt-2">
+                The point where the consumer acts (submits enquiry, signs up, swipes card), delays, or chooses a rival alternative.
+              </p>
+            </div>
+            <div class="mt-3 text-[10px] font-bold text-gray-600 bg-gray-100 p-1.5 comic-border">
+              Moment of action or delay
+            </div>
+          </div>
+
+          <div class="bg-white p-3.5 comic-border shadow-comic flex flex-col justify-between">
+            <div>
+              <span class="bg-comicInk text-white font-bangers text-xs px-2 py-0.5 comic-border inline-block mb-2">STAGE 5</span>
+              <h4 class="font-bangers text-lg text-comicInk">POST-PURCHASE BEHAVIOUR</h4>
+              <p class="text-xs text-gray-700 mt-2">
+                Actual experience after the decision. If case data lacks this, it is recorded as an <em>evidence gap</em> rather than fabricating customer satisfaction!
+              </p>
+            </div>
+            <div class="mt-3 text-[10px] font-bold text-gray-600 bg-gray-100 p-1.5 comic-border">
+              Experience & outcome
+            </div>
+          </div>
+
+        </div>
+
+        <!-- The 4 Practical Questions Prompt Grid -->
+        <div class="bg-comicBlue/10 p-5 comic-border">
+          <div class="flex items-center gap-2 mb-3">
+            <i data-lucide="help-circle" class="w-5 h-5 text-comicBlue"></i>
+            <h4 class="font-bangers text-xl text-comicInk">THE 4 PRACTICAL QUESTIONS (PROMPTED AT EVERY SINGLE STAGE)</h4>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs">
+            <div class="bg-white p-3 comic-border">
+              <strong class="text-comicInk font-sans block mb-1">1. PURPOSE:</strong>
+              <p class="text-gray-700">What is the consumer actively trying to achieve at this exact point in time?</p>
+            </div>
+            <div class="bg-white p-3 comic-border">
+              <strong class="text-comicInk font-sans block mb-1">2. BEHAVIOUR & CHANNEL:</strong>
+              <p class="text-gray-700">What do they do, where does it happen, and what role does the platform play?</p>
+            </div>
+            <div class="bg-white p-3 comic-border">
+              <strong class="text-comicInk font-sans block mb-1">3. INFLUENCE:</strong>
+              <p class="text-gray-700">What personal, social, or situational factors shape and alter their choice?</p>
+            </div>
+            <div class="bg-white p-3 comic-border">
+              <strong class="text-comicInk font-sans block mb-1">4. EVIDENCE & UNCERTAINTY:</strong>
+              <p class="text-gray-700">What factual data supports this finding, and what remains an unvalidated unknown?</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 3: CES EVIDENCE SCREENING -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicYellow comic-border flex items-center justify-center font-bangers text-xl">3</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                CONCEPT 3: EXAMINE EVIDENCE — THE CONSUMER EVIDENCE SUMMARY (CES)
+              </h3>
+              <span class="text-xs font-bold text-comicGreen uppercase font-sans">Minimum Viable Evidence Base Protocol</span>
+            </div>
+          </div>
+          <span class="bg-green-100 text-green-900 px-3 py-1 comic-border text-xs font-bold">ANTI-ASSUMPTION SHIELD</span>
+        </div>
+
+        <p class="text-sm font-medium text-gray-800 bg-yellow-50 p-3.5 comic-border mb-6">
+          <strong>Why It Exists:</strong> Prevents marketers from relying on "manager opinions," convenient online reviews, or AI-generated assumptions. It establishes a <em>Minimum Viable Evidence Base</em>—the best relevant data reasonably available to form a preliminary conclusion.
+        </p>
+
+        <!-- Screening Protocol Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-comicInk text-white font-bangers text-base tracking-wider">
+                <th class="p-3 border-2 border-comicInk w-16">#</th>
+                <th class="p-3 border-2 border-comicInk w-36">FIELD</th>
+                <th class="p-3 border-2 border-comicInk">CONCEPTUAL PURPOSE</th>
+                <th class="p-3 border-2 border-comicInk w-48">QUALITY BENCHMARK</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y-2 divide-comicInk bg-white font-comic">
+              <tr class="hover:bg-yellow-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk">1</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">1. QUESTION</td>
+                <td class="p-3 border-2 border-comicInk">Formulates a focused question arising from consumer decision findings (e.g., "Why do evening applicants stall at module credit checks?").</td>
+                <td class="p-3 border-2 border-comicInk font-sans text-xs">Laser-targeted, avoids broad generalizations.</td>
+              </tr>
+              <tr class="hover:bg-yellow-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk">2</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">2. SOURCE</td>
+                <td class="p-3 border-2 border-comicInk">Identifies the specific data log, survey, CRM record, user interview, or analytical report.</td>
+                <td class="p-3 border-2 border-comicInk font-sans text-xs">Named empirical audit trail.</td>
+              </tr>
+              <tr class="hover:bg-yellow-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk">3</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">3. FINDING</td>
+                <td class="p-3 border-2 border-comicInk">States a careful, objective conclusion <strong>without overclaiming beyond what the data proves</strong>.</td>
+                <td class="p-3 border-2 border-comicInk font-sans text-xs">Strictly empirical observations only.</td>
+              </tr>
+              <tr class="hover:bg-yellow-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk">4</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">4. LIMITATION</td>
+                <td class="p-3 border-2 border-comicInk">Identifies the main constraint affecting confidence (e.g., small sample size, self-selected respondents, missing motivation context).</td>
+                <td class="p-3 border-2 border-comicInk font-sans text-xs">Acknowledges analytical boundaries.</td>
+              </tr>
+              <tr class="hover:bg-yellow-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk">5</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">5. STATUS</td>
+                <td class="p-3 border-2 border-comicInk">
+                  Assigns a confidence status: 
+                  <span class="inline-block bg-green-200 text-green-900 px-2 py-0.5 rounded text-[11px] font-bold comic-border ml-1">Supported</span> (solid evidence),
+                  <span class="inline-block bg-yellow-200 text-yellow-900 px-2 py-0.5 rounded text-[11px] font-bold comic-border ml-1">Preliminary</span> (partial evidence), or
+                  <span class="inline-block bg-red-200 text-red-900 px-2 py-0.5 rounded text-[11px] font-bold comic-border ml-1">To Validate</span> (unproven assumption).
+                </td>
+                <td class="p-3 border-2 border-comicInk font-sans text-xs">Prevents false confidence.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- CONCEPT 4: AUDIENCE SEGMENTATION (4 BASES) -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicYellow comic-border flex items-center justify-center font-bangers text-xl">4</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                CONCEPT 4: IDENTIFY MEANINGFUL GROUPS — AUDIENCE SEGMENTATION (4 BASES)
+              </h3>
+              <span class="text-xs font-bold text-comicPurple uppercase font-sans">Shatter The Demographic Trap</span>
+            </div>
+          </div>
+          <span class="bg-purple-100 text-purple-900 px-3 py-1 comic-border text-xs font-bold">MULTIDIMENSIONAL PROFILING</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center mb-6">
+          <div class="md:col-span-8 bg-yellow-50 p-4 comic-border">
+            <p class="text-sm font-medium text-gray-800 leading-relaxed">
+              <strong>Why It Exists:</strong> Avoids the <em>Demographic Trap</em>—grouping consumers solely by age, gender, or income. Generic demographic buckets describe <em>who someone is</em>, but almost never explain <strong>why or how</strong> they make buying decisions.
+            </p>
+          </div>
+          <div class="md:col-span-4 bg-comicRed text-white p-3.5 comic-border shadow-comic text-center">
+            <span class="font-bangers text-xl block">THE DEMOGRAPHIC TRAP</span>
+            <span class="text-xs font-comic">"Prince Charles and Ozzy Osbourne share the same demographics. Do they buy the same things?"</span>
+          </div>
+        </div>
+
+        <!-- The 4 Analytical Bases Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+          <div class="bg-white p-4 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicInk block mb-1">DEMOGRAPHIC</span>
+            <span class="text-[10px] font-bold text-gray-600 uppercase block mb-2">Observable Characteristics</span>
+            <p class="text-xs text-gray-700">Occupation, formal education level, household income tier, employment status.</p>
+          </div>
+
+          <div class="bg-white p-4 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicInk block mb-1">GEOGRAPHIC</span>
+            <span class="text-[10px] font-bold text-gray-600 uppercase block mb-2">Location Nuances</span>
+            <p class="text-xs text-gray-700">Physical distance from campus/store, urban vs. rural, commute realities, regional access constraints.</p>
+          </div>
+
+          <div class="bg-white p-4 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicInk block mb-1">PSYCHOGRAPHIC</span>
+            <span class="text-[10px] font-bold text-gray-600 uppercase block mb-2">Internal Psychology</span>
+            <p class="text-xs text-gray-700">Personal ambitions, fear of obsolescence, core priorities, perceived career risk, personal values.</p>
+          </div>
+
+          <div class="bg-white p-4 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicInk block mb-1">BEHAVIOURAL</span>
+            <span class="text-[10px] font-bold text-gray-600 uppercase block mb-2">Observed Actions</span>
+            <p class="text-xs text-gray-700">Search query syntax, repeated late-night module visits, syllabus downloads, review comparison habits.</p>
+          </div>
+        </div>
+
+        <!-- Meaningful Segment Definition -->
+        <div class="bg-comicYellow/30 p-4 comic-border">
+          <strong class="font-sans text-sm block mb-1 text-comicInk uppercase font-bold">Concept of Meaningful Segments:</strong>
+          <p class="text-xs sm:text-sm text-gray-800">
+            A truly useful segment combines multiple bases (e.g., <em>career-transition goals</em> [Psychographic] + <em>repeated evening curriculum page visits</em> [Behavioural] + <em>working mid-level corporate analyst</em> [Demographic]) to reveal a distinct, predictable decision pattern.
+          </p>
+        </div>
+      </div>
+
+      <!-- CONCEPT 5 & 6 DUAL GRID -->
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- CONCEPT 5: PRIORITISE AUDIENCE & PERSONA HANDOVER -->
+        <div class="bg-white comic-border-thick p-6 shadow-comic-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-3 pb-2 border-b-2 border-comicInk">
+              <span class="w-8 h-8 bg-comicYellow comic-border flex items-center justify-center font-bangers text-lg">5</span>
+              <div>
+                <h3 class="font-bangers text-2xl text-comicInk">CONCEPT 5: PRIORITISE AUDIENCE & PERSONA HANDOVER</h3>
+                <span class="text-[11px] font-bold text-gray-600 uppercase">Focus Before Execution</span>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 p-3 comic-border mb-4 text-xs">
+              <strong>Why It Exists:</strong> <em>"If you want everybody, you have nobody."</em> To diagnose friction precisely, an organization must select <strong>ONE provisional priority audience</strong>.
+            </div>
+
+            <div class="space-y-3 mb-4">
+              <strong class="font-sans text-xs uppercase font-bold block text-comicInk">3 Practical Selection Checks:</strong>
+              <div class="bg-white p-2.5 comic-border text-xs">
+                <span class="font-bold text-comicRed">1. Connection to Concern:</span> Does this group's specific difficulty directly drive the business problem identified in CCEG?
+              </div>
+              <div class="bg-white p-2.5 comic-border text-xs">
+                <span class="font-bold text-comicBlue">2. Importance of Need:</span> Does their decision involve high personal, emotional, time, or financial commitment?
+              </div>
+              <div class="bg-white p-2.5 comic-border text-xs">
+                <span class="font-bold text-comicGreen">3. Strength of Evidence:</span> Is there sufficient factual, verifiable data backing this segment's behavior?
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-comicInk text-white p-3.5 comic-border mt-3 text-xs">
+            <strong class="font-bangers text-comicYellow text-sm block tracking-wider">THE PERSONA HANDOVER RULE:</strong>
+            This is a factual document passing <strong>6 empirical evidence fields</strong> into deeper analysis, NOT a fictional cartoon profile with made-up coffee habits or stock images!
+          </div>
+        </div>
+
+        <!-- CONCEPT 6: PRECISE DIAGNOSIS & PROBLEM STATEMENT -->
+        <div class="bg-white comic-border-thick p-6 shadow-comic-lg flex flex-col justify-between">
+          <div>
+            <div class="flex items-center gap-3 mb-3 pb-2 border-b-2 border-comicInk">
+              <span class="w-8 h-8 bg-comicYellow comic-border flex items-center justify-center font-bangers text-lg">6</span>
+              <div>
+                <h3 class="font-bangers text-2xl text-comicInk">CONCEPT 6: PRECISE DIAGNOSIS & PROBLEM STATEMENT</h3>
+                <span class="text-[11px] font-bold text-gray-600 uppercase">The 8-Field Journey & Synthesis</span>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 p-3 comic-border mb-4 text-xs">
+              <strong>The Diagnostic Sequence:</strong>
+              <ul class="list-disc list-inside mt-1 space-y-1 text-gray-700">
+                <li><strong>Customer Journey Map (8 Fields):</strong> Journey Stage, Goal, Action, Information Need, Touchpoint, Evidence, Friction, and Limitation to isolate the <em>Priority Journey Area</em>.</li>
+                <li><strong>Touchpoint & Competitor Diagnosis:</strong> Audit priority touchpoint against a key rival to isolate the exact friction mechanism.</li>
+                <li><strong>PESTLE External Trends:</strong> Macro scan (Political, Economic, Social, Technological, Legal, Environmental) driving consumer anxiety.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Preliminary Problem Formula Box -->
+          <div class="bg-comicYellow p-4 comic-border shadow-comic">
+            <span class="font-bangers text-sm text-comicRed block tracking-wider">THE PRELIMINARY PROBLEM STATEMENT FORMULA</span>
+            <p class="font-comic text-xs sm:text-sm font-bold text-comicInk leading-relaxed mt-1">
+              "[<span class="text-comicRed underline">Priority Audience</span>] fails to [<span class="text-comicRed underline">Desired Action</span>] at [<span class="text-comicRed underline">Priority Touchpoint</span>] because they experience [<span class="text-comicRed underline">Specific Friction</span>]. While [<span class="text-comicRed underline">External Trend</span>] increases their need, [<span class="text-comicRed underline">Important Uncertainty</span>] remains."
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PHASE 2: DIGITAL MARKETING STRATEGY & PLANNING (BA8134) -->
+  <!-- ========================================================================= -->
+  <section id="phase-2" class="py-16 px-4 sm:px-6 bg-cyan-50/60 border-b-4 border-comicInk relative">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- Phase Banner -->
+      <div class="bg-comicBlue comic-border-thick p-6 sm:p-8 shadow-comic-xl relative overflow-hidden text-white">
+        <div class="absolute right-0 top-0 translate-x-12 -translate-y-6 opacity-20 font-bangers text-9xl select-none text-white">
+          PHASE 02
+        </div>
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-comicInk text-white px-3 py-1 comic-border text-xs font-bangers tracking-wider uppercase mb-2">
+              <i data-lucide="compass" class="w-4 h-4 text-comicBlue"></i> BA8134 STRATEGY & MEDIA ENGINE
+            </div>
+            <h2 class="font-bangers text-4xl sm:text-6xl text-comicInk tracking-wide">
+              PHASE 2: DIGITAL STRATEGY & PLANNING
+            </h2>
+            <p class="font-comic text-base sm:text-lg text-comicInk font-bold max-w-3xl mt-1">
+              Core Philosophy: Translate diagnostic problem statements into measurable objectives, audience targeting parameters, media channel plans, conversion funnels, and experimentation blueprints.
+            </p>
+          </div>
+          <div class="bg-white p-3.5 comic-border shadow-comic text-center min-w-[200px] text-comicInk">
+            <span class="block text-xs font-black uppercase text-comicBlue font-sans">CORE DIRECTIVE</span>
+            <span class="font-bangers text-2xl text-comicInk">ACCOUNTABLE EXECUTION</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNIT 1: SMART OBJECTIVES & OKR FRAMEWORK -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicBlue text-white comic-border flex items-center justify-center font-bangers text-xl">1</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                UNIT 1: SMART OBJECTIVES & OKR FRAMEWORK
+              </h3>
+              <span class="text-xs font-bold text-comicBlue uppercase font-sans">From Qualitative Friction to Commercial Accountability</span>
+            </div>
+          </div>
+          <span class="bg-blue-100 text-blue-900 px-3 py-1 comic-border text-xs font-bold">TRACING LOGIC</span>
+        </div>
+
+        <!-- Tracing Logic Diagram -->
+        <div class="bg-blue-50 p-4 comic-border mb-6">
+          <div class="font-bangers text-lg text-comicInk mb-2">STRICT TRACING LOGIC CHAIN:</div>
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-xs sm:text-sm font-bold">
+            <div class="bg-white p-3 comic-border shadow-comic w-full text-center">
+              BA8133 Problem Statement
+            </div>
+            <span class="font-bangers text-comicBlue text-2xl">➔</span>
+            <div class="bg-white p-3 comic-border shadow-comic w-full text-center">
+              Strategic Business Goal
+            </div>
+            <span class="font-bangers text-comicBlue text-2xl">➔</span>
+            <div class="bg-comicYellow p-3 comic-border shadow-comic w-full text-center text-comicInk">
+              1-Sentence SMART Objective
+            </div>
+          </div>
+        </div>
+
+        <!-- OKR Anatomy Breakdown -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="bg-white p-4 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicBlue block mb-1">QUALITATIVE OBJECTIVE</span>
+            <p class="text-xs text-gray-700 leading-relaxed">
+              Ambitious strategic direction (e.g., <em>"Align brand messaging with customer resonance and use short-form video to build viral top-funnel momentum across career switchers."</em>)
+            </p>
+          </div>
+
+          <div class="bg-white p-4 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicGreen block mb-1">PRIMARY KEY RESULTS (KRs)</span>
+            <p class="text-xs text-gray-700 leading-relaxed">
+              <strong>2–3 quantitative outcome targets</strong> against which campaign success is formally evaluated (e.g., +45% qualified syllabus downloads, 320 subscription enrollments).
+            </p>
+          </div>
+
+          <div class="bg-white p-4 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicPurple block mb-1">DIAGNOSTIC METRICS</span>
+            <p class="text-xs text-gray-700 leading-relaxed">
+              Contextual indicators (view completion, TACOS, bounce rate) that explain <strong>why Key Results moved</strong>, preventing dangerous misattribution.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNIT 2: DUAL PLANNING MODELS: SOSTAC® × RACE -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicBlue text-white comic-border flex items-center justify-center font-bangers text-xl">2</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                UNIT 2: DUAL PLANNING MODELS — SOSTAC® × RACE
+              </h3>
+              <span class="text-xs font-bold text-gray-600 uppercase font-sans">Macro Strategic Spine Meets Digital Execution Funnel</span>
+            </div>
+          </div>
+          <span class="bg-yellow-200 text-comicInk px-3 py-1 comic-border text-xs font-bold">SYNCHRONIZED ARCHITECTURE</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <!-- SOSTAC SPINE -->
+          <div class="bg-yellow-50/70 p-5 comic-border shadow-comic">
+            <div class="flex items-center justify-between border-b-2 border-comicInk pb-2 mb-3">
+              <h4 class="font-bangers text-2xl text-comicInk">SOSTAC® MACRO SPINE (PR SMITH)</h4>
+              <span class="text-[10px] font-bold bg-comicInk text-white px-2 py-0.5">STRATEGY</span>
+            </div>
+            <div class="space-y-2 text-xs sm:text-sm font-comic">
+              <div class="bg-white p-2 comic-border flex justify-between"><strong>• Situation:</strong> <span>Where are we now? (Fed by BA8133)</span></div>
+              <div class="bg-white p-2 comic-border flex justify-between"><strong>• Objectives:</strong> <span>Where do we want to go? (SMART/OKRs)</span></div>
+              <div class="bg-white p-2 comic-border flex justify-between"><strong>• Strategy:</strong> <span>How do we get there? (Positioning & Segments)</span></div>
+              <div class="bg-white p-2 comic-border flex justify-between"><strong>• Tactics:</strong> <span>Specific channels & media tools (PESO)</span></div>
+              <div class="bg-white p-2 comic-border flex justify-between"><strong>• Actions:</strong> <span>Creative assets, schedules & workflows</span></div>
+              <div class="bg-white p-2 comic-border flex justify-between"><strong>• Control:</strong> <span>Measurement, attribution & KPI dashboards</span></div>
+            </div>
+          </div>
+
+          <!-- RACE DIGITAL FUNNEL -->
+          <div class="bg-blue-50/70 p-5 comic-border shadow-comic">
+            <div class="flex items-center justify-between border-b-2 border-comicInk pb-2 mb-3">
+              <h4 class="font-bangers text-2xl text-comicBlue">RACE DIGITAL FUNNEL (SMART INSIGHTS)</h4>
+              <span class="text-[10px] font-bold bg-comicBlue text-white px-2 py-0.5">TACTICS</span>
+            </div>
+            <div class="space-y-2 text-xs sm:text-sm font-comic">
+              <div class="bg-white p-2.5 comic-border">
+                <strong class="text-comicBlue font-sans text-xs">R — REACH:</strong>
+                <span class="text-gray-700 block text-xs">Build top-funnel awareness across target audiences using paid and earned media.</span>
+              </div>
+              <div class="bg-white p-2.5 comic-border">
+                <strong class="text-comicBlue font-sans text-xs">A — ACT:</strong>
+                <span class="text-gray-700 block text-xs">Encourage initial customer interactions, exploration of content, and leads on digital touchpoints.</span>
+              </div>
+              <div class="bg-white p-2.5 comic-border">
+                <strong class="text-comicBlue font-sans text-xs">C — CONVERT:</strong>
+                <span class="text-gray-700 block text-xs">Achieve transactional commitment (enquiry, subscription payment, purchase).</span>
+              </div>
+              <div class="bg-white p-2.5 comic-border">
+                <strong class="text-comicBlue font-sans text-xs">E — ENGAGE:</strong>
+                <span class="text-gray-700 block text-xs">Long-term customer retention, advocacy, repeat purchases, and community building.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNIT 3: GTM PERSONAS & ALGORITHMIC TARGETING -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicBlue text-white comic-border flex items-center justify-center font-bangers text-xl">3</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                UNIT 3: GO-TO-MARKET PERSONAS & ALGORITHMIC TARGETING
+              </h3>
+              <span class="text-xs font-bold text-comicRed uppercase font-sans">Creative Signals Over Manual Micro-Targeting</span>
+            </div>
+          </div>
+          <span class="bg-red-100 text-comicRed px-3 py-1 comic-border text-xs font-bold">ALGORITHMIC SHIFT</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-yellow-50 p-4 comic-border">
+            <h4 class="font-bangers text-xl text-comicInk mb-2">GTM PERSONA VS. PROVISIONAL AUDIENCE</h4>
+            <p class="text-xs sm:text-sm text-gray-800 leading-relaxed">
+              While Phase 1 defined a broad evidence-based segment without a face or voice, <strong>GTM Personas</strong> give marketing and creative teams semi-fictional representations (names, roles, decision triggers, and core messaging angles) so creators picture <em>exactly who they are writing hooks and designing video for</em>.
+            </p>
+          </div>
+
+          <div class="bg-blue-50 p-4 comic-border">
+            <h4 class="font-bangers text-xl text-comicBlue mb-2">MODERN ALGORITHMIC TARGETING CONCEPT</h4>
+            <p class="text-xs sm:text-sm text-gray-800 leading-relaxed">
+              Media planners no longer micromanage narrow interest clusters. Modern ad platforms (Meta Advantage+, Google Optimized Targeting) use machine learning to expand reach dynamically. The modern planner's job is feeding <strong>uncompromising creative signals, server-side Conversions API (CAPI) events, and strict audience exclusion lists</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- UNIT 4: CONVERSION FUNNEL DESIGN & KPI DASHBOARD -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicBlue text-white comic-border flex items-center justify-center font-bangers text-xl">4</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                UNIT 4: CONVERSION FUNNEL DESIGN & MEANINGFUL KPI DASHBOARD
+              </h3>
+              <span class="text-xs font-bold text-comicGreen uppercase font-sans">Banishing Vanity Metrics Forever</span>
+            </div>
+          </div>
+          <span class="bg-green-100 text-green-900 px-3 py-1 comic-border text-xs font-bold">DATA ACCOUNTABILITY</span>
+        </div>
+
+        <p class="text-sm font-medium text-gray-800 bg-yellow-50 p-3.5 comic-border mb-6">
+          <strong>The Meaningful Metric Concept:</strong> A metric is meaningful <em>ONLY</em> if it is explicitly attached to a specific funnel stage and directionally indicates whether the prospect is moving closer to taking action. Page views and impressions are meaningless in isolation.
+        </p>
+
+        <!-- KPI Funnel Stage Table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-comicInk text-white font-bangers text-base tracking-wider">
+                <th class="p-3 border-2 border-comicInk w-48">FUNNEL STAGE</th>
+                <th class="p-3 border-2 border-comicInk w-64">MEANINGFUL KPI METRIC</th>
+                <th class="p-3 border-2 border-comicInk">CONCEPTUAL & DIAGNOSTIC PURPOSE</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y-2 divide-comicInk bg-white font-comic">
+              <tr class="hover:bg-blue-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk bg-blue-50 font-sans">1. Need Recognition</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">CPM / Completed Video Views (ThruPlays)</td>
+                <td class="p-3 border-2 border-comicInk">Measures directional top-of-funnel reach and qualified attention without confusing passive eyeballs with buyer intent.</td>
+              </tr>
+              <tr class="hover:bg-blue-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk bg-blue-50 font-sans">2. Info Search</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">Content Engagement Rate / Scroll Depth</td>
+                <td class="p-3 border-2 border-comicInk">Confirms educational content is successfully pulling traffic in and solving initial knowledge voids.</td>
+              </tr>
+              <tr class="hover:bg-blue-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk bg-blue-50 font-sans">3. Evaluation</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicBlue">Category / Curriculum Page Visits & CTR</td>
+                <td class="p-3 border-2 border-comicInk">Signals active consideration and option comparison against market rivals.</td>
+              </tr>
+              <tr class="hover:bg-blue-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk bg-blue-50 font-sans">4. Decision</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicRed">Conversion Rate (CVR) / CPA / ROAS</td>
+                <td class="p-3 border-2 border-comicInk">Measures hard commercial commitments, customer acquisition costs, and immediate return on advertising spend.</td>
+              </tr>
+              <tr class="hover:bg-blue-50/60">
+                <td class="p-3 font-bold border-2 border-comicInk bg-blue-50 font-sans">5. Post-Purchase</td>
+                <td class="p-3 font-bold border-2 border-comicInk text-comicGreen">TACOS / Repeat Purchase / Referral Rate</td>
+                <td class="p-3 border-2 border-comicInk">Evaluates Total Advertising Cost of Sales across full revenue, customer retention, and compounding lifetime value (LTV).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- UNIT 5: PESO CHANNEL STRATEGY & THE 6-COLUMN MEDIA PLAN -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicBlue text-white comic-border flex items-center justify-center font-bangers text-xl">5</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                UNIT 5: PESO CHANNEL STRATEGY & THE 6-COLUMN MEDIA PLAN
+              </h3>
+              <span class="text-xs font-bold text-comicBlue uppercase font-sans">Balanced Orchestration Across Paid, Earned, Shared, Owned</span>
+            </div>
+          </div>
+          <span class="bg-comicYellow px-3 py-1 comic-border text-xs font-bold font-sans">TACTICAL BLUEPRINT</span>
+        </div>
+
+        <div class="mb-6 grid grid-cols-2 sm:grid-cols-4 gap-3 text-center font-bangers text-sm">
+          <div class="bg-red-50 p-2.5 comic-border text-comicRed">P — PAID (Ads & Sponsors)</div>
+          <div class="bg-green-50 p-2.5 comic-border text-comicGreen">E — EARNED (PR & Reviews)</div>
+          <div class="bg-blue-50 p-2.5 comic-border text-comicBlue">S — SHARED (Social Media)</div>
+          <div class="bg-purple-50 p-2.5 comic-border text-comicPurple">O — OWNED (Web & App)</div>
+        </div>
+
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-comicInk text-white font-bangers text-sm tracking-wider">
+                <th class="p-2.5 border-2 border-comicInk">1. PLATFORM</th>
+                <th class="p-2.5 border-2 border-comicInk">2. FUNNEL STAGE</th>
+                <th class="p-2.5 border-2 border-comicInk">3. TARGETING APPROACH</th>
+                <th class="p-2.5 border-2 border-comicInk">4. AD FORMAT</th>
+                <th class="p-2.5 border-2 border-comicInk">5. BUDGET SHARE</th>
+                <th class="p-2.5 border-2 border-comicInk">6. PRIMARY KPI</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y-2 divide-comicInk bg-white font-comic">
+              <tr>
+                <td class="p-2.5 border-2 border-comicInk font-bold">YouTube Video</td>
+                <td class="p-2.5 border-2 border-comicInk">Need Recognition</td>
+                <td class="p-2.5 border-2 border-comicInk">Affinity & In-Market Tech Switchers</td>
+                <td class="p-2.5 border-2 border-comicInk">Non-skippable & Shorts Hooks</td>
+                <td class="p-2.5 border-2 border-comicInk font-bold text-comicRed">30%</td>
+                <td class="p-2.5 border-2 border-comicInk font-sans text-xs">Completed Views / CPM</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 border-2 border-comicInk font-bold">Meta (IG / FB)</td>
+                <td class="p-2.5 border-2 border-comicInk">Information Search</td>
+                <td class="p-2.5 border-2 border-comicInk">Advantage+ Broad + Video Engagers</td>
+                <td class="p-2.5 border-2 border-comicInk">Carousel Breakdown & Story Demos</td>
+                <td class="p-2.5 border-2 border-comicInk font-bold text-comicRed">25%</td>
+                <td class="p-2.5 border-2 border-comicInk font-sans text-xs">Engagement Rate / CTR</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 border-2 border-comicInk font-bold">Google Search</td>
+                <td class="p-2.5 border-2 border-comicInk">Evaluation & Decision</td>
+                <td class="p-2.5 border-2 border-comicInk">High-Intent Keywords + Competitor Terms</td>
+                <td class="p-2.5 border-2 border-comicInk">Responsive Search Ads (RSAs)</td>
+                <td class="p-2.5 border-2 border-comicInk font-bold text-comicRed">35%</td>
+                <td class="p-2.5 border-2 border-comicInk font-sans text-xs">Conversion Rate / CPA</td>
+              </tr>
+              <tr>
+                <td class="p-2.5 border-2 border-comicInk font-bold">Email & SMS</td>
+                <td class="p-2.5 border-2 border-comicInk">Decision & Post-Purchase</td>
+                <td class="p-2.5 border-2 border-comicInk">Cart Abandoners & Verified Alumni</td>
+                <td class="p-2.5 border-2 border-comicInk">Triggered Nurture Automation</td>
+                <td class="p-2.5 border-2 border-comicInk font-bold text-comicRed">10%</td>
+                <td class="p-2.5 border-2 border-comicInk font-sans text-xs">Repeat LTV & Referral Rate</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- UNIT 6: MARKETING EXPERIMENTS & BLUEPRINT CONSOLIDATION -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicBlue text-white comic-border flex items-center justify-center font-bangers text-xl">6</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                UNIT 6: MARKETING EXPERIMENTS, A/B TESTING & STRATEGY CONSOLIDATION
+              </h3>
+              <span class="text-xs font-bold text-comicPurple uppercase font-sans">Scientific Iteration & Executive Synthesis</span>
+            </div>
+          </div>
+          <span class="bg-purple-100 text-purple-900 px-3 py-1 comic-border text-xs font-bold">HYPOTHESIS ISOLATION</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-yellow-50 p-4 comic-border">
+            <h4 class="font-bangers text-xl text-comicInk mb-2">SCIENTIFIC A/B TESTING ENGINE</h4>
+            <p class="text-xs sm:text-sm text-gray-800 leading-relaxed">
+              Formulates testable hypotheses to isolate single variables (headline hooks, CTA placements, landing page friction removers) with pre-set internal sample sizes and external industry benchmarks. Never test multiple variables simultaneously without multivariate traffic controls.
+            </p>
+          </div>
+
+          <div class="bg-blue-50 p-4 comic-border">
+            <h4 class="font-bangers text-xl text-comicBlue mb-2">INTEGRATED STRATEGY BLUEPRINT CONSOLIDATION</h4>
+            <p class="text-xs sm:text-sm text-gray-800 leading-relaxed">
+              Synthesizes SMART Objectives, OKRs, GTM Personas, 6-Column Media Plans, Conversion Funnel Dashboards, and A/B Testing Protocols into a single, cohesive, executive-ready master operating document.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- PHASE 3: STRATEGIC OFFER & COGNITIVE DESIGN -->
+  <!-- ========================================================================= -->
+  <section id="phase-3" class="py-16 px-4 sm:px-6 bg-purple-50/60 border-b-4 border-comicInk relative">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- Phase Banner -->
+      <div class="bg-comicPurple comic-border-thick p-6 sm:p-8 shadow-comic-xl relative overflow-hidden text-white">
+        <div class="absolute right-0 top-0 translate-x-12 -translate-y-6 opacity-20 font-bangers text-9xl select-none text-white">
+          PHASE 03
+        </div>
+        <div class="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-comicInk text-white px-3 py-1 comic-border text-xs font-bangers tracking-wider uppercase mb-2">
+              <i data-lucide="award" class="w-4 h-4 text-comicYellow"></i> THE STRATEGIC ENDGAME
+            </div>
+            <h2 class="font-bangers text-4xl sm:text-6xl text-white tracking-wide">
+              PHASE 3: STRATEGIC OFFER & COGNITIVE DESIGN
+            </h2>
+            <p class="font-comic text-base sm:text-lg text-purple-100 font-bold max-w-3xl mt-1">
+              Once diagnosis (Phase 1) and media planning (Phase 2) are established, advanced positioning frameworks are applied to eliminate market friction and maximize conversions.
+            </p>
+          </div>
+          <div class="bg-comicYellow p-3.5 comic-border shadow-comic text-center min-w-[200px] text-comicInk">
+            <span class="block text-xs font-black uppercase text-comicRed font-sans">MARKET POSITION</span>
+            <span class="font-bangers text-2xl text-comicInk">CATEGORY OF ONE</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 1: ALEX HORMOZI'S GRAND SLAM OFFER -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicYellow comic-border flex items-center justify-center font-bangers text-xl">1</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                CONCEPT 1: ALEX HORMOZI'S "CATEGORY OF ONE" (GRAND SLAM OFFER)
+              </h3>
+              <span class="text-xs font-bold text-comicRed uppercase font-sans">Convert Journey Friction into High-Value Stacks</span>
+            </div>
+          </div>
+          <span class="bg-comicYellow px-3 py-1 comic-border text-xs font-bangers text-comicInk">GRAND SLAM OFFER</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          
+          <div class="bg-white p-5 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicRed block mb-2">1. SELLING IN A VACUUM</span>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Re-positions an offering so uniquely that it cannot be directly compared to any commodity competitor. Buying decisions shift from <em>"Your Product vs. Competitor B"</em> into a binary choice: <strong>Your Unique Offer vs. Doing Nothing</strong>.
+            </p>
+          </div>
+
+          <div class="bg-white p-5 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicBlue block mb-2">2. NEW OPPORTUNITY VS. IMPROVEMENT</span>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Never sell an "improvement offer" (10% cheaper or slightly faster), which immediately triggers price resistance and past failure memories. Introduce a <strong>New Opportunity</strong> that renders old methods obsolete.
+            </p>
+          </div>
+
+          <div class="bg-white p-5 comic-border shadow-comic">
+            <span class="font-bangers text-xl text-comicGreen block mb-2">3. FRICTION-TO-VALUE STACKS</span>
+            <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+              Takes every specific point of friction identified in Step 6 journey mapping and builds a direct bonus tool, template, or risk-reversal guarantee to completely eliminate it.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Interactive Value Stack Showcase -->
+        <div class="bg-yellow-50 p-5 comic-border">
+          <div class="flex items-center justify-between mb-3">
+            <h4 class="font-bangers text-xl text-comicInk">HOW STEP 6 FRICTIONS TRANSFORM INTO VALUE STACKS:</h4>
+            <span class="text-xs font-bold text-comicRed uppercase font-sans">PRACTICAL DEMONSTRATION</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
+            <div class="bg-white p-3 comic-border">
+              <span class="text-comicRed font-bold block mb-1">❌ Step 6 Friction:</span>
+              <p class="text-gray-700">"Too busy with night shifts to study syllabus."</p>
+              <div class="my-1 border-t border-dashed border-gray-400"></div>
+              <span class="text-comicGreen font-bold block mb-1">✅ Hormozi Stack Solution:</span>
+              <p class="text-gray-900 font-medium">15-Minute Audio Flash-Packs + 1-on-1 Async WhatsApp Coach.</p>
+            </div>
+            <div class="bg-white p-3 comic-border">
+              <span class="text-comicRed font-bold block mb-1">❌ Step 6 Friction:</span>
+              <p class="text-gray-700">"Fear of failing corporate certification exam."</p>
+              <div class="my-1 border-t border-dashed border-gray-400"></div>
+              <span class="text-comicGreen font-bold block mb-1">✅ Hormozi Stack Solution:</span>
+              <p class="text-gray-900 font-medium">"Pass On First Try" 100% Exam Fee Refund & Retake Insurance.</p>
+            </div>
+            <div class="bg-white p-3 comic-border">
+              <span class="text-comicRed font-bold block mb-1">❌ Step 6 Friction:</span>
+              <p class="text-gray-700">"Unclear if portfolio will impress hiring managers."</p>
+              <div class="my-1 border-t border-dashed border-gray-400"></div>
+              <span class="text-comicGreen font-bold block mb-1">✅ Hormozi Stack Solution:</span>
+              <p class="text-gray-900 font-medium">Live Executive Portfolio Review & Recruiter Directory Access.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONCEPT 2: PHILIP KOTLER'S MARKETING 7.0 -->
+      <div class="bg-white comic-border-thick p-6 sm:p-8 shadow-comic-lg">
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-4 pb-3 border-b-3 border-comicInk">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 bg-comicPurple text-white comic-border flex items-center justify-center font-bangers text-xl">2</span>
+            <div>
+              <h3 class="font-bangers text-2xl sm:text-3xl text-comicInk tracking-wide">
+                CONCEPT 2: PHILIP KOTLER'S MARKETING 7.0 (THE COGNITIVE COMPASS)
+              </h3>
+              <span class="text-xs font-bold text-comicPurple uppercase font-sans">Engaging the Augmented Human in the Era of Digital Overload</span>
+            </div>
+          </div>
+          <span class="bg-purple-100 text-purple-900 px-3 py-1 comic-border text-xs font-bold">NEURO-STRATEGY</span>
+        </div>
+
+        <div class="bg-purple-50 p-4 comic-border mb-6">
+          <strong class="font-sans text-xs uppercase font-bold text-comicPurple block">The Target: The Augmented Human</strong>
+          <p class="text-sm font-medium text-gray-800 leading-relaxed mt-1">
+            A buyer whose thinking, feeling, evaluating, and purchasing behaviors are heavily guided by algorithmic recommendations, instant feedback loops, and chronic digital cognitive overload.
+          </p>
+        </div>
+
+        <!-- The 3 Cognitive Brain Systems -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          
+          <!-- Attention Brain -->
+          <div class="bg-white p-5 comic-border shadow-comic relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-bangers text-2xl text-comicRed">1. ATTENTION BRAIN</span>
+                <span class="text-[10px] font-bold bg-red-100 text-comicRed px-2 py-0.5 comic-border">TOP-FUNNEL</span>
+              </div>
+              <strong class="text-xs font-bold text-gray-700 block mb-2">Pattern Gating & Anti-Blindness</strong>
+              <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Bypasses "banner blindness" using <strong>Lo-Fi, raw, authentic, human-first content</strong> that breaks unconscious scroll patterns without triggering ad defense mechanisms.
+              </p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-comicInk text-[11px] font-bold text-comicRed">
+              Tactics: Unpolished iPhone hooks, contrarian text overlays, behind-the-scenes reality.
+            </div>
+          </div>
+
+          <!-- Social Brain -->
+          <div class="bg-white p-5 comic-border shadow-comic relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-bangers text-2xl text-comicBlue">2. SOCIAL BRAIN</span>
+                <span class="text-[10px] font-bold bg-blue-100 text-comicBlue px-2 py-0.5 comic-border">MID-FUNNEL</span>
+              </div>
+              <strong class="text-xs font-bold text-gray-700 block mb-2">Belonging & StoryBrand (SB7)</strong>
+              <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Engages micro-communities and leverages Donald Miller's <strong>StoryBrand (SB7) narrative framework</strong>: The Customer is always the Hero with a problem; your brand is merely the Guide with a plan.
+              </p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-comicInk text-[11px] font-bold text-comicBlue">
+              Tactics: Peer validations, cohort testimonials, community Slack access, shared identity badges.
+            </div>
+          </div>
+
+          <!-- Reward Brain -->
+          <div class="bg-white p-5 comic-border shadow-comic relative flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="font-bangers text-2xl text-comicGreen">3. REWARD BRAIN</span>
+                <span class="text-[10px] font-bold bg-green-100 text-green-800 px-2 py-0.5 comic-border">BOTTOM-FUNNEL</span>
+              </div>
+              <strong class="text-xs font-bold text-gray-700 block mb-2">Dopamine & Frictionless Value</strong>
+              <p class="text-xs sm:text-sm text-gray-700 leading-relaxed">
+                Aligns value propositions with natural cognitive trade-offs to deliver friction-free <strong>"WOW moments"</strong> at checkout and instantaneous post-purchase gratification.
+              </p>
+            </div>
+            <div class="mt-4 pt-2 border-t border-comicInk text-[11px] font-bold text-comicGreen">
+              Tactics: Instant unlockables, 1-click enrollments, personalized onboarding video within 60s.
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- INTERACTIVE DIAGNOSTIC FORGE / PROBLEM STATEMENT BUILDER -->
+  <!-- ========================================================================= -->
+  <section id="interactive-lab" class="py-16 px-4 sm:px-6 bg-white border-b-4 border-comicInk relative">
+    <div class="max-w-5xl mx-auto">
+      
+      <div class="text-center space-y-2 mb-8">
+        <span class="bg-comicRed text-white px-3 py-1 comic-border text-xs font-bangers tracking-wider uppercase inline-block shadow-comic">
+          INTERACTIVE WORKSTATION
+        </span>
+        <h2 class="font-bangers text-4xl sm:text-5xl text-comicInk">
+          THE STRATEGIC PROBLEM STATEMENT FORGE
+        </h2>
+        <p class="font-comic text-gray-700 max-w-xl mx-auto text-sm">
+          Test your synthesis skills! Inject your diagnostic variables into the Concept 6 formula and watch the unified marketing statement assemble in real time.
+        </p>
+      </div>
+
+      <div class="bg-yellow-50 comic-border-thick p-6 sm:p-8 shadow-comic-xl">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+          
+          <div>
+            <label class="block text-xs font-bold text-comicInk uppercase mb-1">1. Priority Audience (Step 5)</label>
+            <input type="text" id="inputAudience" value="Mid-career financial analysts" 
+              class="w-full p-2.5 comic-border bg-white text-xs font-sans focus:bg-yellow-100 outline-none" placeholder="e.g. Mid-career financial analysts">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-comicInk uppercase mb-1">2. Desired Action (Step 1 Context)</label>
+            <input type="text" id="inputAction" value="submit an executive course enquiry" 
+              class="w-full p-2.5 comic-border bg-white text-xs font-sans focus:bg-yellow-100 outline-none" placeholder="e.g. submit an executive course enquiry">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-comicInk uppercase mb-1">3. Priority Touchpoint (Step 6)</label>
+            <input type="text" id="inputTouchpoint" value="the weekend curriculum fees page" 
+              class="w-full p-2.5 comic-border bg-white text-xs font-sans focus:bg-yellow-100 outline-none" placeholder="e.g. the weekend curriculum fees page">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-comicInk uppercase mb-1">4. Specific Friction (Step 6)</label>
+            <input type="text" id="inputFriction" value="unclear module credit transfers and hidden lab fees" 
+              class="w-full p-2.5 comic-border bg-white text-xs font-sans focus:bg-yellow-100 outline-none" placeholder="e.g. unclear module credit transfers">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-comicInk uppercase mb-1">5. External Trend (PESTLE)</label>
+            <input type="text" id="inputTrend" value="AI automation pressure across legacy banking" 
+              class="w-full p-2.5 comic-border bg-white text-xs font-sans focus:bg-yellow-100 outline-none" placeholder="e.g. AI automation in banking">
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-comicInk uppercase mb-1">6. Important Uncertainty (CES Gap)</label>
+            <input type="text" id="inputUncertainty" value="whether employers will sponsor evening certificates" 
+              class="w-full p-2.5 comic-border bg-white text-xs font-sans focus:bg-yellow-100 outline-none" placeholder="e.g. employer sponsorship readiness">
+          </div>
+
+        </div>
+
+        <div class="flex justify-center mb-6">
+          <button onclick="updateProblemStatement()" class="px-6 py-2.5 bg-comicRed hover:bg-red-600 text-white comic-border shadow-comic font-bangers text-lg tracking-wider active:translate-y-1 transition-all">
+            ⚡ FORGE PROBLEM STATEMENT NOW!
+          </button>
+        </div>
+
+        <!-- Generated Output Box -->
+        <div class="bg-white p-5 comic-border shadow-comic">
+          <div class="flex items-center justify-between mb-2 border-b-2 border-comicInk pb-2">
+            <span class="font-bangers text-comicRed text-lg">COMPILED PRELIMINARY PROBLEM STATEMENT:</span>
+            <span class="text-[10px] font-bold bg-green-100 text-green-900 px-2 py-0.5 comic-border">FORMULA VERIFIED</span>
+          </div>
+          <p id="outputStatement" class="font-comic text-base sm:text-lg text-comicInk leading-relaxed font-bold">
+            "Mid-career financial analysts fails to submit an executive course enquiry at the weekend curriculum fees page because they experience unclear module credit transfers and hidden lab fees. While AI automation pressure across legacy banking increases their need, whether employers will sponsor evening certificates remains."
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RETRO FOOTER -->
+  <footer class="bg-comicInk text-white py-12 px-4 sm:px-6 border-t-4 border-comicInk relative">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+      <div>
+        <div class="font-bangers text-3xl text-comicYellow tracking-wider">
+          MARKETING MULTIVERSE COMPENDIUM
+        </div>
+        <p class="text-xs text-gray-400 font-sans mt-1">
+          Complete conceptual coverage: BA8133 Diagnostic Foundation + BA8134 Digital Planning + Kotler 7.0 & Hormozi Offers.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <a href="#saga-overview" class="px-4 py-2 bg-comicYellow text-comicInk comic-border font-bangers text-sm shadow-comic hover:bg-white transition-colors">
+          Back to Top ↑
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Interactive Scripts -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Problem Statement Assembler
+    function updateProblemStatement() {
+      const aud = document.getElementById('inputAudience').value.trim() || '[Priority Audience]';
+      const act = document.getElementById('inputAction').value.trim() || '[Desired Action]';
+      const touch = document.getElementById('inputTouchpoint').value.trim() || '[Priority Touchpoint]';
+      const frict = document.getElementById('inputFriction').value.trim() || '[Specific Friction]';
+      const trend = document.getElementById('inputTrend').value.trim() || '[External Trend]';
+      const unc = document.getElementById('inputUncertainty').value.trim() || '[Important Uncertainty]';
+
+      const compiled = `"${aud} fails to ${act} at ${touch} because they experience ${frict}. While ${trend} increases their need, ${unc} remains."`;
+      document.getElementById('outputStatement').innerText = compiled;
+      launchConfetti();
+    }
+
+    // Confetti FX for comic celebration
+    function launchConfetti() {
+      if (typeof confetti === 'function') {
+        confetti({
+          particleCount: 80,
+          spread: 70,
+          origin: { y: 0.6 },
+          colors: ['#FFE817', '#FF2A54', '#00D2FF', '#9D00FF', '#10DF79']
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>
